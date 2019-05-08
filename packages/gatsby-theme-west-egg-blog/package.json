@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-theme-west-egg-blog",
+  "version": "0.0.1",
+  "description": "A base blog theme",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "react",
+    "blog"
+  ],
+  "devDependencies": {
+    "gatsby": "^2.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.0.16",
+    "@mdx-js/react": "^1.0.16",
+    "gatsby-mdx": "^0.6.3",
+    "gatsby-plugin-meta-redirect": "^1.1.1",
+    "gatsby-plugin-page-creator": "^2.0.12",
+    "gatsby-plugin-redirects": "^1.0.0",
+    "gatsby-source-filesystem": "^2.0.33"
+  }
+}

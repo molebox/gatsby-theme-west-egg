@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-theme-west-egg-core",
+  "version": "0.0.1",
+  "description": "Core theme with base content",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "react"
+  ],
+  "devDependencies": {
+    "gatsby": "^2.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

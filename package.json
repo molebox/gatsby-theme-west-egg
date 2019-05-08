@@ -1,0 +1,16 @@
+{
+  "name": "gatsby-theme-west-egg-medley",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "react"
+  ],
+  "workspaces": [
+    "site",
+    "packages/*"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-theme-west-egg",
+  "version": "0.0.1",
+  "description": "WIP: A theme medley to create a Gatsby site with custom branding and styles. ",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "react"
+  ],
+  "dependencies": {
+    "gatsby-theme-west-egg-style": "*"
+  },
+  "devDependencies": {
+    "gatsby": "^2.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
