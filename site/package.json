@@ -33,8 +33,6 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
-    "@types/react": "^16.8.17",
-    "@types/react-dom": "^16.8.4",
     "gatsby": "^2.4.2",
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-emotion": "^4.0.6",
@@ -47,6 +45,8 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-loader": "^2.1.2",

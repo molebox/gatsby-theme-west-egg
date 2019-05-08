@@ -2,7 +2,7 @@ const path = require('path');
 const pkg = require('./package.json');
 
 module.exports = {
-        __experimentalThemes: ['gatsby-theme-west-egg-style'],
+        __experimentalThemes: ['gatsby-theme-west-egg'],
         plugins: [
             {
                 resolve: "gatsby-plugin-page-creator",
