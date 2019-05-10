@@ -1,11 +1,12 @@
 # gatsby-theme-west-egg
 
-A base Gatsby theme package built with Emotion and Typescript consisting of:
+A Gatsby theme package built with Emotion and Typescript consisting of:
 
 - Style theme
 - Blog theme
 - Cart theme
 - Master theme
+- Example site
 
 Current status: WIP
 
