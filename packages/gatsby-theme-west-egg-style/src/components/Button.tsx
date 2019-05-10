@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {css} from '@emotion/core';
-import {colors} from '../utils/colors';
+import colors from '../utils/colors';
 
 export const buttonBorderLeft = css`
   left: -2px;
@@ -56,6 +56,7 @@ background-color: Transparent;
 border: none;
 cursor:pointer;
 outline:none;
+
 & .bottom {
   position: absolute;
   left: 4px;
@@ -126,6 +127,14 @@ interface ButtonProps {
   onClick: () => void;
 }
 
+/**
+ * A button with an off center foreground shadow
+ * 
+ * The button is built with a natural 1.5rem margin
+ * 
+ * @param text The buttons text
+ * @param onClick The onClick event of the button
+ */
 export default ({text, onClick}: ButtonProps) => (
 
   <div

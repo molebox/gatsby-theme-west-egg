@@ -10,6 +10,9 @@
     "react"
   ],
   "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
     "lint": "./node_modules/.bin/eslint \"src/**/*.{ts,tsx,js}\"",
     "eslint-check-rules": "./node_modules/.bin/eslint --print-config . | eslint-config-prettier-check",
     "pretty-check": "prettier --check \"src/**/*.{ts,tsx,js}\"",

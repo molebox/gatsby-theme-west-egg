@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { colors } from '../utils/colors';
+import colors from '../utils/colors';
 import { css } from '@emotion/core';
 
 interface TitleProps {

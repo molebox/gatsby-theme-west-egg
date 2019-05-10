@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { colors } from '../utils/colors';
+import colors from '../utils/colors';
 import { css } from '@emotion/core';
 
-interface BoxProps {
+export interface BoxProps {
 	noBackground?: boolean;
 	noBorder?: boolean;
 	children: React.ReactNode;
 	color?: string;
 	height?: string;
 	width?: string;
+	rounded?: boolean;
 }
 
 /**
@@ -20,7 +21,7 @@ interface BoxProps {
  * @param width Optional box width
  * @param children The contents of the box
  */
-export default ({ children, noBackground, noBorder, color, height, width }: BoxProps) => {
+export default ({ children, noBackground, noBorder, color, height, width, rounded}: BoxProps) => {
 	return (
 		<div
 			css={css`
@@ -36,6 +37,8 @@ export default ({ children, noBackground, noBorder, color, height, width }: BoxP
 					height: 100%;
 					background-color: ${noBackground ? 'none' : color ? color : undefined};
 					display: block;
+					border-radius: ${rounded ? '35px' : '0'}
+
 				}
 				& .top {
 					position: relative;
@@ -44,6 +47,7 @@ export default ({ children, noBackground, noBorder, color, height, width }: BoxP
 					height: 100%;
 					padding: 24px 34px 22px 34px;
 					border: 2px ${noBorder ? 'none' : 'solid'} ${colors.primary};
+					border-radius: ${rounded ? '35px' : '0'}
 				}
 			`}
 		>
