@@ -29,7 +29,7 @@ export default ({ children, noBackground, noBorder, color, height, width, rounde
 				height: ${height ? height : '100%'};
 				width: ${width ? width : '100%'};
 				margin: 0.5rem;
-				& .bottom {
+				& .boxBottom {
 					position: absolute;
 					left: 4px;
 					top: 7px;
@@ -40,7 +40,7 @@ export default ({ children, noBackground, noBorder, color, height, width, rounde
 					border-radius: ${rounded ? '35px' : '0'}
 
 				}
-				& .top {
+				& .boxTop {
 					position: relative;
 					left: 10px;
 					top: 0;
@@ -51,8 +51,8 @@ export default ({ children, noBackground, noBorder, color, height, width, rounde
 				}
 			`}
 		>
-			<div className="bottom" />
-			<div className="top">{children}</div>
+			<div className="boxBottom" />
+			<div className="boxTop">{children}</div>
 		</div>
 	);
 };

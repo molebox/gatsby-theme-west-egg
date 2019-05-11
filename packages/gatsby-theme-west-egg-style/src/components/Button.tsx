@@ -59,9 +59,9 @@ outline:none;
 
 & .bottom {
   position: absolute;
-  left: 4px;
+  left: 7px;
   top: 9px;
-  width: 97%;
+  width: 99%;
   height: 100%;
   background-color: ${colors.secondary};
   display: block;
@@ -79,9 +79,9 @@ outline:none;
 }
 & .top .label {
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 700;
   color: ${colors.primary};
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 110%;
   letter-spacing: 2px;
   text-align: center;
@@ -122,9 +122,12 @@ outline:none;
   cursor: pointer;
 }`;
 
+type Type = 'submit' | 'reset';
+
 interface ButtonProps {
   text: string;
   onClick: () => void;
+  type?: Type;
 }
 
 /**
@@ -135,7 +138,7 @@ interface ButtonProps {
  * @param text The buttons text
  * @param onClick The onClick event of the button
  */
-export default ({text, onClick}: ButtonProps) => (
+export default ({text, onClick, type}: ButtonProps) => (
 
   <div
     css={{
@@ -143,7 +146,7 @@ export default ({text, onClick}: ButtonProps) => (
     margin: '1.5rem'
     }}
   >
-    <button onClick={onClick} css={button}>
+    <button type={type} aria-label={text} name={text} onClick={onClick} css={button}>
         <div className="bottom"/>
         <div className="top">
             <div className="label">{text}</div>

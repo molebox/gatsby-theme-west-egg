@@ -1,0 +1,100 @@
+{
+  "stages": {
+    "develop": {
+      "plugins": [],
+      "presets": [
+        {
+          "name": "@emotion/babel-preset-css-prop",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        },
+        {
+          "name": "@babel/preset-typescript",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "develop-html": {
+      "plugins": [],
+      "presets": [
+        {
+          "name": "@emotion/babel-preset-css-prop",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        },
+        {
+          "name": "@babel/preset-typescript",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-html": {
+      "plugins": [],
+      "presets": [
+        {
+          "name": "@emotion/babel-preset-css-prop",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        },
+        {
+          "name": "@babel/preset-typescript",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-javascript": {
+      "plugins": [],
+      "presets": [
+        {
+          "name": "@emotion/babel-preset-css-prop",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        },
+        {
+          "name": "@babel/preset-typescript",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    }
+  },
+  "browserslist": [
+    ">0.25%",
+    "not dead"
+  ]
+}
