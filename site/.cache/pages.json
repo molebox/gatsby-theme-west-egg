@@ -5,18 +5,18 @@
         "path": "/"
     },
     {
-        "componentChunkName": "component---packages-gatsby-theme-west-egg-stripe-cart-src-pages-canceled-tsx",
-        "jsonName": "canceled-b86",
-        "path": "/canceled/"
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-pages-checkout-canceled-tsx",
+        "jsonName": "checkout-canceled-6c7",
+        "path": "/checkout/canceled/"
+    },
+    {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-pages-checkout-success-tsx",
+        "jsonName": "checkout-success-57c",
+        "path": "/checkout/success/"
     },
     {
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"
-    },
-    {
-        "componentChunkName": "component---packages-gatsby-theme-west-egg-stripe-cart-src-pages-success-tsx",
-        "jsonName": "success-ca5",
-        "path": "/success/"
     }
 ]

@@ -1,10 +1,23 @@
 import * as React from 'react';
+import { useSiteMetadata } from '../utils/hooks';
 
-const STRIPE_API_KEY = 'pk_test_sCZdKKv3RLpcLwCLybjQVKQE004MOo7pXE';
+interface Stripe {
+	button: JSX.Element;
+	sku: string;
+	quantity: number;
+}
 
-export default () => {
-	// const [stripe, setStripe] = React.useState(Stripe(STRIPE_API_KEY));
-
+/**
+ * A Stripe checkout form. When submitted the user will be redirected to the stripe checkout.
+ * Upon completion of purchase the user will be redirected back to your website.
+ *
+ * @example <StripeCheckout button={<MyCustomButton type="submit" text="Buy"/>} sku="sku_123" quantity={1}/>
+ * @param button A custom button element to submit the form
+ * @param sku A product stock keeping unit
+ * @param quantity The quantity to be included in the checkout
+ */
+export default ({ button, sku, quantity }: Stripe) => {
+	const { STRIPE_API_KEY, siteUrl } = useSiteMetadata();
 	let stripe: any;
 
 	React.useEffect(() => {
@@ -18,13 +31,13 @@ export default () => {
 				stripe &&
 					stripe
 						.redirectToCheckout({
-							items: [{ sku: 'sku_F2wt2pvjhQrs0w', quantity: 1 }],
+							items: [{ sku, quantity }],
 
 							// Note that it is not guaranteed your customers will be redirected to this
 							// URL *100%* of the time, it's possible that they could e.g. close the
 							// tab between form submission and the redirect.
-							successUrl: 'http://localhost:8000/success',
-							cancelUrl: 'http://localhost:8000/canceled',
+							successUrl: `${siteUrl}/checkout/success`,
+							cancelUrl: `${siteUrl}/checkout/canceled`,
 						})
 						.then((result: any) => {
 							console.log({ result });
@@ -38,7 +51,7 @@ export default () => {
 						});
 			}}
 		>
-			<button type="submit">Buy Now</button>
+			{button}
 		</form>
 	);
 };

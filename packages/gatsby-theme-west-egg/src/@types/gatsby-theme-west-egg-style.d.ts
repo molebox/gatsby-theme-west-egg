@@ -47,9 +47,11 @@ declare module 'gatsby-theme-west-egg-style' {
      */
     export const Title: (props: TitleProps) => JSX.Element;
 
+    type Type = 'submit' | 'reset';
     interface ButtonProps {
         text: string;
-        onClick: () => void;
+        onClick?: () => void;
+        type?: Type;
     }
 
     /**

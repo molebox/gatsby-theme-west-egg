@@ -1,8 +1,15 @@
 const path = require('path');
 const pkg = require('./package.json');
 
-module.exports = {
-  __experimentalThemes: [],
+module.exports = (options) => {
+  const {STRIPE_API_KEY, STRIPE_SECRET_KEY, siteUrl} = options;
+
+  return {
+    siteMetadata: {
+      STRIPE_API_KEY,
+      STRIPE_SECRET_KEY,
+      siteUrl
+    },
     plugins: [
           {
             resolve: "gatsby-plugin-page-creator",
@@ -16,6 +23,17 @@ module.exports = {
               modules: [pkg.name]
             }
           },
-          'gatsby-plugin-stripe'
+          'gatsby-plugin-stripe',
+          {
+            resolve: `gatsby-source-stripe`,
+            options: {
+              objects: ['Product', 'Sku'],
+              secretKey: STRIPE_SECRET_KEY,
+              downloadFiles: true,
+              auth: false,
+            }
+          }
     ]
+  }
+ 
 }

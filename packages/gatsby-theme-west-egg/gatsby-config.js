@@ -1,10 +1,18 @@
 const path = require('path');
 const pkg = require('./package.json');
+require('dotenv').config();
 
 module.exports = {
     __experimentalThemes: [
         'gatsby-theme-west-egg-style',
-        'gatsby-theme-west-egg-stripe-cart'
+        {
+          resolve: 'gatsby-theme-west-egg-stripe-cart',
+          options: {
+            STRIPE_API_KEY: 'pk_test_sCZdKKv3RLpcLwCLybjQVKQE004MOo7pXE',
+            STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
+            siteUrl: 'http://localhost:8000'
+          }
+        }
     ],
     plugins: [
         {

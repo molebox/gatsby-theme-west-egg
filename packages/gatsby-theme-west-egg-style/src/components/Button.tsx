@@ -126,7 +126,7 @@ type Type = 'submit' | 'reset';
 
 interface ButtonProps {
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
   type?: Type;
 }
 
@@ -136,7 +136,7 @@ interface ButtonProps {
  * The button is built with a natural 1.5rem margin
  * 
  * @param text The buttons text
- * @param onClick The onClick event of the button
+ * @param onClick The onClick event of the button - optional
  */
 export default ({text, onClick, type}: ButtonProps) => (
 
