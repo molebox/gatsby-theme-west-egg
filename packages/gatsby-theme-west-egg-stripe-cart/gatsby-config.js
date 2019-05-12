@@ -3,7 +3,6 @@ const pkg = require('./package.json');
 
 module.exports = (options) => {
   const {STRIPE_API_KEY, STRIPE_SECRET_KEY, siteUrl} = options;
-  console.log({options});
 
   return {
     siteMetadata: {

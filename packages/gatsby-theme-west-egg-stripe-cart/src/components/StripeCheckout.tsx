@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useSiteMetadata } from '../utils/hooks';
+import { useSiteMetadata, useProductData } from '../utils/hooks';
 
 interface Stripe {
 	button: JSX.Element;
@@ -18,6 +18,8 @@ interface Stripe {
  */
 export default ({ button, sku, quantity }: Stripe) => {
 	const { STRIPE_API_KEY, siteUrl } = useSiteMetadata();
+	const {id, currency, price, name} = useProductData();
+	console.log(id, currency, price, name);
 	let stripe: any;
 
 	React.useEffect(() => {
