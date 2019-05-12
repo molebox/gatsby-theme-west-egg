@@ -23,6 +23,8 @@ module.exports = (options) => {
               modules: [pkg.name]
             }
           },
+          'gatsby-theme-transformer-sharp',
+          'gatsby-plugin-sharp',
           'gatsby-plugin-stripe',
           {
             resolve: `gatsby-source-stripe`,

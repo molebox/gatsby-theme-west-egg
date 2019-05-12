@@ -64,7 +64,9 @@
   "dependencies": {
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-page-creator": "^2.0.12",
+    "gatsby-plugin-sharp": "^2.0.37",
     "gatsby-plugin-stripe": "^1.2.0",
-    "gatsby-source-stripe": "^2.2.2"
+    "gatsby-source-stripe": "^2.2.2",
+    "gatsby-transformer-sharp": "^2.1.19"
   }
 }
