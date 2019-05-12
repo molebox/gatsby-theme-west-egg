@@ -2,20 +2,20 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 /**
  * Hook to provide the site meta data.
- * Provides STRIPE_API_KEY
+ * Provides STRIPE_API_KEY and siteUrl
  */
-export function useSiteMetadata() {
+export const useSiteMetadata = () => {
 	const { site } = useStaticQuery(
-		graphql`
-			query SITE_METADATA_QUERY {
-				site {
-					siteMetadata {
-						STRIPE_API_KEY
-						siteUrl
-					}
+	  graphql`
+		query {
+		  site {
+				siteMetadata {
+					STRIPE_API_KEY
+					siteUrl
 				}
-			}
-		`
-	);
-	return site.siteMetadata;
-}
+		  }
+		}
+	  `
+	)
+	return site.siteMetadata
+  }

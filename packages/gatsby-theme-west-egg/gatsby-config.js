@@ -1,6 +1,11 @@
 const path = require('path');
 const pkg = require('./package.json');
-require('dotenv').config();
+let activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
 
 module.exports = {
     __experimentalThemes: [

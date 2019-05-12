@@ -59,7 +59,9 @@
   "peerDependencies": {
     "gatsby": "^2.4.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "gatsby-transformer-sharp": "^2.1.19",
+    "gatsby-plugin-sharp": "^2.0.37"
   },
   "dependencies": {
     "gatsby-plugin-compile-es6-packages": "^1.1.0",

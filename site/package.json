@@ -43,10 +43,10 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/parser": "^1.7.0",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-loader": "^2.1.2",
