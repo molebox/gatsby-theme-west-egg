@@ -2,22 +2,22 @@
 
 A Gatsby theme for a stripe checkout. Register an account at [Stripe](https://stripe.com/en-se)
 
-Add to your Gatsby sites gatsby-config.js just like you would with a plugin. It's advisable to store your STRIPE_SECRET_KEY as an .env variable and to make sure you ignore your .env file in .gitignore.
+Add to your Gatsby sites gatsby-config.js just like you would with a plugin. The `STRIPE_API_KEY`, `STRIPE_SECRET_KEY` and `siteUrl` are passed in as options from the consuming theme.
 
 ```
-require('dotenv').config();
-
 module.exports = {
+
     __experimentalThemes: [
+      'gatsby-theme-west-egg-style',
       {
-          resolve: 'gatsby-theme-west-egg-stripe-cart',
-          options: {
-            STRIPE_API_KEY: 'my_api_key_from_stripe',
-            STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
-            siteUrl: 'http://localhost:8000'
-          }
+        resolve: 'gatsby-theme-west-egg-stripe-cart',
+        options: {
+          STRIPE_API_KEY,
+          STRIPE_SECRET_KEY,
+          siteUrl
         }
-    ]
+      }
+  ],
 }
 ```
 

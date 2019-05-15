@@ -17,32 +17,5 @@ export const useSiteMetadata = () => {
 			}
 		`
 	);
-	return site;
+	return site.siteMetadata;
 };
-
-/**
- * Hook to provide the product data.
- * @returns id, currency, price, name
- */
-export const useProductData = () => {
-	const { allStripeSku } = useStaticQuery(
-	  graphql`
-		{
-			allStripeSku {
-				edges {
-					node {
-						id
-						currency
-						price
-						attributes {
-							name
-						}
-					}
-				}
-			}
-		}
-
-	  `
-	)
-	return allStripeSku.edges
-  }
