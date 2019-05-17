@@ -69,6 +69,7 @@
     "gatsby-plugin-sharp": "^2.0.37",
     "gatsby-plugin-stripe": "^1.2.0",
     "gatsby-source-stripe": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.1.19"
+    "gatsby-transformer-sharp": "^2.1.19",
+    "gatsby-theme-west-egg-style": "*"
   }
 }

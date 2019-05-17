@@ -9,6 +9,7 @@ module.exports = (options) => {
       STRIPE_API_KEY,
       siteUrl
     },
+    __experimentalThemes: ['gatsby-theme-west-egg-style'],
     plugins: [
           {
             resolve: "gatsby-plugin-page-creator",

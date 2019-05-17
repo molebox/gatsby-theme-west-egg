@@ -19,3 +19,4 @@ export const useSiteMetadata = () => {
 	);
 	return site.siteMetadata;
 };
+
