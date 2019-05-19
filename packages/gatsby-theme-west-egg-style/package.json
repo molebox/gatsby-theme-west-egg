@@ -1,8 +1,9 @@
 {
   "name": "gatsby-theme-west-egg-style",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A base styles theme",
   "main": "index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "keywords": [
     "gatsby",
@@ -40,9 +41,9 @@
     "eslint-plugin-no-null": "^1.0.2",
     "eslint-plugin-prefer-arrow": "^1.1.5",
     "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
-    "eslint-plugin-promise": "^4.1.1",
     "gatsby": "^2.4.2",
     "husky": "^2.2.0",
     "lint-staged": "^8.1.6",
