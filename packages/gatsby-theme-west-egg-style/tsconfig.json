@@ -19,10 +19,13 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "esModuleInterop": true,
-    "incremental": true,
     "declaration": true
   },
   "include": [
     "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }

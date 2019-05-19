@@ -11,6 +11,25 @@ module.exports = (options) => {
     },
     __experimentalThemes: ['gatsby-theme-west-egg-style'],
     plugins: [
+      'gatsby-plugin-stripe',
+      {
+        resolve: `gatsby-source-stripe`,
+        options: {
+          objects: ['Sku'],
+          secretKey: STRIPE_SECRET_KEY,
+          downloadFiles: true,
+          auth: false,
+        }
+      },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `images`,
+          path: `${__dirname}/src/images/`,
+        },
+      },
+      'gatsby-transformer-sharp',
+      'gatsby-plugin-sharp',
           {
             resolve: "gatsby-plugin-page-creator",
             options: {
@@ -18,21 +37,16 @@ module.exports = (options) => {
             },
           },
           {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `pages`,
+              path: `${__dirname}/src/pages/`,
+            },
+          },
+          {
             resolve: 'gatsby-plugin-compile-es6-packages',
             options: {
               modules: [pkg.name]
-            }
-          },
-          'gatsby-transformer-sharp',
-          'gatsby-plugin-sharp',
-          'gatsby-plugin-stripe',
-          {
-            resolve: `gatsby-source-stripe`,
-            options: {
-              objects: ['Product', 'Sku'],
-              secretKey: STRIPE_SECRET_KEY,
-              downloadFiles: true,
-              auth: false,
             }
           }
     ]

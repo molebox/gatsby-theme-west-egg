@@ -32,10 +32,10 @@ export const buttonBorderBottom = css`
 
 export const buttonDark = css`
   & .top {
-    border: 2px solid ${colors.accent};
+    border: 2px solid ${colors.secondary};
   }
   & .top .label {
-    color: ${colors.accent};
+    color: ${colors.secondary};
   }
 `;
 
@@ -70,6 +70,7 @@ outline:none;
   -o-transition: all 0.20s ease-out;
   transition: all 0.20s ease-out;
 }
+
 & .top {
   position: relative;
   left: 10px;
@@ -77,6 +78,7 @@ outline:none;
   padding: 24px 34px 22px 34px;
   border: 2px solid ${colors.primary};
 }
+
 & .top .label {
   font-family: Montserrat;
   font-weight: 700;
@@ -91,19 +93,24 @@ outline:none;
   -o-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
-&:active {
+&:active:enabled {
   ${buttonDark}
 }
-&:hover .bottom {
+
+&:disabled {
+  opacity: 0.55;
+}
+
+&:hover:enabled .bottom {
   left: 10px;
   top: 0;
   background-color: ${colors.light};
 }
-&:hover .top .label {
+&:hover:enabled .top .label {
   color: ${colors.primary};
   cursor: pointer;
 }
-&:hover
+&:hover:enabled
   .top
   .${buttonBorderLeft},
   &:hover
@@ -112,7 +119,7 @@ outline:none;
   height: calc(100% + 2px);
   cursor: pointer;
 }
-&:hover
+&:hover:enabled
   .top
   .${buttonBorderTop},
   &:hover
@@ -128,6 +135,7 @@ interface ButtonProps {
   text: string;
   onClick?: () => void;
   type?: Type;
+  disabled?: boolean;
 }
 
 /**
@@ -138,7 +146,7 @@ interface ButtonProps {
  * @param text The buttons text
  * @param onClick The onClick event of the button - optional
  */
-export default ({text, onClick, type}: ButtonProps) => (
+export default ({text, onClick, type, disabled}: ButtonProps) => (
 
   <div
     css={{
@@ -146,7 +154,7 @@ export default ({text, onClick, type}: ButtonProps) => (
     margin: '1.5rem'
     }}
   >
-    <button type={type} aria-label={text} name={text} onClick={onClick} css={button}>
+    <button disabled={disabled} type={type} aria-label={text} name={text} onClick={onClick} css={button}>
         <div className="bottom"/>
         <div className="top">
             <div className="label">{text}</div>

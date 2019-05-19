@@ -1,0 +1,46 @@
+# gatsby-theme-west-egg-style
+
+A Gatsby theme that provides a set of styled components.
+
+Add to your Gatsby sites gatsby-config.js just like you would with a plugin.
+
+```
+module.exports = {
+
+    __experimentalThemes: ['gatsby-theme-west-egg-style']
+}
+```
+
+Example usage:
+
+```
+import React from 'react';
+import {Box, Title, Button} from 'gatsby-theme-west-egg-style';
+import colors from 'gatsby-theme-west-egg-style/src/utils/colors';
+
+
+export default () => (
+    <div style={{margin: '5rem'}}>
+        <Box color={colors.accent}>
+            <Title fontWeight="400">TEST</Title>
+            <Button text="Hello" onClick={() => console.log('you clicked me!')}>
+        </Box>
+    </div>
+)
+```
+
+Current status: WIP
+
+## Built With
+
+- [Gatbsy](https://www.gatsbyjs.org/)
+- [Emotion](https://emotion.sh/docs/introduction)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## Authors
+
+- **Rich Haines** - _Hungry Bear Studio_
+
+## License
+
+This project is licensed under the MIT License
