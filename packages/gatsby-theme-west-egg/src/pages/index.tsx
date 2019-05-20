@@ -22,6 +22,5 @@ export default () => (
             <Title fontWeight="400">Im in a box</Title>
         </Box>
         </div>
-
     </div>
 )
