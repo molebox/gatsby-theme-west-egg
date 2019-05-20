@@ -39,7 +39,7 @@ export default () => (
 
 Produces: 
 
-[Example output](./readmeImages/west-egg-style-exmaple)
+![](readmeImages/west-egg-style-exmaple.PNG)
 
 Current status: WIP
 
