@@ -1,14 +1,16 @@
 {
   "name": "gatsby-theme-west-egg-style",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A base styles theme",
-  "main": "index.js",
-  "types": "gatsby-theme-west-egg-style/index.d.ts",
+  "main": "./src/index.js",
+  "types": "./src/@types/gatsby-theme-west-egg-style/index.d.ts",
   "license": "MIT",
   "keywords": [
     "gatsby",
     "gatsby-theme",
-    "react"
+    "react",
+    "emotion",
+    "css in js"
   ],
   "scripts": {
     "develop": "gatsby develop",
