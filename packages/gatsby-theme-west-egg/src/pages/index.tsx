@@ -17,5 +17,11 @@ export default () => (
         <div style={{marginTop: '2rem'}}>
             <Button text="I am a rad button"/>
         </div>
+        <div style={{marginTop: '2rem'}}>
+        <Box color={colors.light}>
+            <Title fontWeight="400">Im in a box</Title>
+        </Box>
+        </div>
+
     </div>
 )

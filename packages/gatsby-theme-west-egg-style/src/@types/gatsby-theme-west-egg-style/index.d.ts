@@ -62,6 +62,8 @@ declare module 'gatsby-theme-west-egg-style' {
      * 
      * @param text The buttons text
      * @param onClick The onClick event of the button
+     * @param type The type of the button. submit or reset
+     * @param disabled Is the button disabled
      */
     export const Button: (props: ButtonProps) => JSX.Element;
 }

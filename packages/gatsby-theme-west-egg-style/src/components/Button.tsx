@@ -145,6 +145,8 @@ interface ButtonProps {
  * 
  * @param text The buttons text
  * @param onClick The onClick event of the button - optional
+ * @param type The type of the button. submit or reset - optional
+ * @param disabled Is the button disabled
  */
 export default ({text, onClick, type, disabled}: ButtonProps) => (
 
