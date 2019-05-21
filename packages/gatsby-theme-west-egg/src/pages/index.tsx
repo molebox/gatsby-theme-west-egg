@@ -1,8 +1,6 @@
 import React from 'react';
-import {Box, Title, Button, Grid} from 'gatsby-theme-west-egg-style';
+import {Box, Title, Button, Grid, Container, Header, Hero, Content, Footer} from 'gatsby-theme-west-egg-style';
 import colors from 'gatsby-theme-west-egg-style/src/utils/colors';
-import { StripeCheckout } from 'gatsby-theme-west-egg-stripe-cart';
-
 
 const boxes = [
     <Box noBackground>
@@ -22,20 +20,25 @@ const boxes = [
 ]
 
 export default () => (
-    <div style={{margin: '5rem'}}>
-        <Box color={colors.accent}>
-            <Title fontWeight="400">TEST</Title>
-            <StripeCheckout 
-                button={<Button type="submit" text="Im a stripe button!"/>}
-                sku='sku_F2wt2pvjhQrs0w'
-                quantity={1}
-            />   
-        </Box>
-        <div style={{marginTop: '2rem'}}>
-            <Button text="I am a rad button"/>
-        </div>
-        <Box noBackground>
-            <Grid elements={boxes}/>
-        </Box>
-    </div>
+    <Container>
+        <Header>
+            <Title>Gatbsy West Egg Theme</Title>
+        </Header>
+        <Hero>
+            <Box color={colors.accent}>
+                <Title fontSize="2rem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Beatae at eius asperiores voluptatibus est, animi nemo odio recusandae ut cumque, iure, repellendus nam dolorem dignissimos dolore. Quia recusandae non molestias.
+                </Title>
+            </Box>
+        </Hero>
+        <Content>
+            <Box noBackground>
+                <Grid elements={boxes}/>
+            </Box>
+        </Content>
+        <Footer>
+            <Title fontSize="2rem">Some content here in the footer</Title>
+        </Footer>
+    </Container>
 )

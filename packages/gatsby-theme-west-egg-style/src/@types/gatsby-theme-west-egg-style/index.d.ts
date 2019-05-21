@@ -76,4 +76,49 @@ declare module 'gatsby-theme-west-egg-style' {
 	 * @returns A responsive grid of elements
 	 */
 	export const Grid: (props: GridProps) => JSX.Element;
+
+	interface ContainerProps {
+		children: React.ReactNode[];
+	}
+
+	/**
+	 * A container component that sets a grid layout
+	 */
+	export const Container: (props: ContainerProps) => JSX.Element;
+
+	interface HeaderProps {
+		children: React.ReactNode;
+	}
+
+	/**
+	 * A header component. Part of the containers grid
+	 */
+	export const Header: (props: HeaderProps) => JSX.Element;
+
+	interface HeroProps {
+		children: React.ReactNode;
+	}
+
+	/**
+	 * A hero component. Part of the containers grid
+	 */
+	export const Hero: (props: HeroProps) => JSX.Element;
+
+	interface ContentProps {
+		children: React.ReactNode;
+	}
+
+	/**
+	 * A content component. Part of the containers grid
+	 */
+	export const Content: (props: ContentProps) => JSX.Element;
+
+	interface FooterProps {
+		children: React.ReactNode;
+	}
+
+	/**
+	 * A footer component. Part of the containers grid
+	 */
+	export const Footer: (props: FooterProps) => JSX.Element;
 }
