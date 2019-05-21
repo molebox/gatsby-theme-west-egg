@@ -2,11 +2,29 @@ const path = require('path');
 const pkg = require('./package.json');
 
 module.exports = (options) => {
-  const {STRIPE_API_KEY, STRIPE_SECRET_KEY, siteUrl} = options;
+  const {
+    STRIPE_API_KEY, 
+    STRIPE_SECRET_KEY, 
+    title,
+    description,
+    author,
+    twitter,
+    siteUrl
+  } = options;
 
   return {
     __experimentalThemes: [
       'gatsby-theme-west-egg-style',
+      {
+        resolve: 'gatsby-theme-west-egg-core',
+        options: {
+          title,
+          description,
+          author,
+          siteUrl,
+          twitter
+        }
+      },
       {
         resolve: 'gatsby-theme-west-egg-stripe-cart',
         options: {

@@ -4,16 +4,16 @@
       "plugins": [],
       "presets": [
         {
-          "name": "@emotion/babel-preset-css-prop",
+          "name": "@babel/preset-typescript",
           "options": {
-            "sourceMap": true,
-            "autoLabel": true,
             "plugins": []
           }
         },
         {
-          "name": "@babel/preset-typescript",
+          "name": "@emotion/babel-preset-css-prop",
           "options": {
+            "sourceMap": true,
+            "autoLabel": true,
             "plugins": []
           }
         }
@@ -27,16 +27,16 @@
       "plugins": [],
       "presets": [
         {
-          "name": "@emotion/babel-preset-css-prop",
+          "name": "@babel/preset-typescript",
           "options": {
-            "sourceMap": true,
-            "autoLabel": true,
             "plugins": []
           }
         },
         {
-          "name": "@babel/preset-typescript",
+          "name": "@emotion/babel-preset-css-prop",
           "options": {
+            "sourceMap": true,
+            "autoLabel": true,
             "plugins": []
           }
         }
@@ -50,16 +50,16 @@
       "plugins": [],
       "presets": [
         {
-          "name": "@emotion/babel-preset-css-prop",
+          "name": "@babel/preset-typescript",
           "options": {
-            "sourceMap": true,
-            "autoLabel": true,
             "plugins": []
           }
         },
         {
-          "name": "@babel/preset-typescript",
+          "name": "@emotion/babel-preset-css-prop",
           "options": {
+            "sourceMap": true,
+            "autoLabel": true,
             "plugins": []
           }
         }
@@ -73,16 +73,16 @@
       "plugins": [],
       "presets": [
         {
-          "name": "@emotion/babel-preset-css-prop",
+          "name": "@babel/preset-typescript",
           "options": {
-            "sourceMap": true,
-            "autoLabel": true,
             "plugins": []
           }
         },
         {
-          "name": "@babel/preset-typescript",
+          "name": "@emotion/babel-preset-css-prop",
           "options": {
+            "sourceMap": true,
+            "autoLabel": true,
             "plugins": []
           }
         }

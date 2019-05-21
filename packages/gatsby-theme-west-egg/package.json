@@ -13,6 +13,7 @@
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-page-creator": "^2.0.12",
+    "gatsby-theme-west-egg-core": "*",
     "gatsby-theme-west-egg-stripe-cart": "*",
     "gatsby-theme-west-egg-style": "0.0.7"
   },

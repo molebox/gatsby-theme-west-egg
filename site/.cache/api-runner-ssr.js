@@ -1,4 +1,10 @@
 var plugins = [{
+      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-plugin-stripe/gatsby-ssr'),
       options: {"plugins":[]},
     },{

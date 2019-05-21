@@ -9,7 +9,6 @@ module.exports = (options) => {
       STRIPE_API_KEY,
       siteUrl
     },
-    __experimentalThemes: ['gatsby-theme-west-egg-style'],
     plugins: [
       'gatsby-plugin-stripe',
       {
@@ -28,8 +27,6 @@ module.exports = (options) => {
           path: `${__dirname}/src/images/`,
         },
       },
-      'gatsby-transformer-sharp',
-      'gatsby-plugin-sharp',
           {
             resolve: "gatsby-plugin-page-creator",
             options: {

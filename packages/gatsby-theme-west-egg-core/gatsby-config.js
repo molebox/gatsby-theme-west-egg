@@ -14,6 +14,8 @@ module.exports = (options) => {
           },
         plugins: [
             'gatsby-plugin-react-helmet',
+            'gatsby-plugin-sharp',
+            'gatsby-transformer-sharp',
             {
                 resolve: "gatsby-plugin-page-creator",
                 options: {
@@ -32,6 +34,7 @@ module.exports = (options) => {
                   modules: [pkg.name]
                 }
               },
+              'gatsby-plugin-sitemap',
               'gatsby-plugin-typescript'
         ]
     }

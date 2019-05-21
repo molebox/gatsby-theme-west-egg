@@ -14,6 +14,10 @@ module.exports = {
             options: {
               STRIPE_API_KEY: process.env.STRIPE_API_KEY,
               STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
+              title: 'Hungry Bear Studio Gatsby Theme Package',
+              description: 'West egg gatsby theme package. Comes with style theme, stripe cart theme, blog and core themes.',
+              author: 'Hungry Bear Studio',
+              twitter: '@studio_hungry',
               siteUrl: 'http://localhost:8000'
             }
           }

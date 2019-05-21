@@ -2,4 +2,3 @@
 export {default as Title} from './src/components/Title';
 export {default as Box} from './src/components/Box';
 export {default as Button} from './src/components/Button';
-export {default as FlipToggle} from './src/components/FlipToggle';
