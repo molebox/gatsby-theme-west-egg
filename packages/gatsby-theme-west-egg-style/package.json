@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-west-egg-style",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A base styles theme",
   "main": "./src/index.js",
   "types": "./src/@types/gatsby-theme-west-egg-style/index.d.ts",
