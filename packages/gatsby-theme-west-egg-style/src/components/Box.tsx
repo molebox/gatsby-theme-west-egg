@@ -21,14 +21,15 @@ export interface BoxProps {
  * @param width Optional box width
  * @param children The contents of the box
  */
-export default ({ children, noBackground, noBorder, color, height, width, rounded}: BoxProps) => {
+export default ({ children, noBackground, noBorder, color, height, width, rounded }: BoxProps) => {
 	return (
 		<div
 			css={css`
 				position: relative;
-				height: ${height ? height : '100%'};
-				width: ${width ? width : '100%'};
+				height: ${height ? height : undefined};
+				width: ${width ? width : undefined};
 				margin: 0.5rem;
+
 				& .boxBottom {
 					position: absolute;
 					left: 4px;
@@ -37,8 +38,7 @@ export default ({ children, noBackground, noBorder, color, height, width, rounde
 					height: 100%;
 					background-color: ${noBackground ? 'none' : color ? color : undefined};
 					display: block;
-					border-radius: ${rounded ? '35px' : '0'}
-
+					border-radius: ${rounded ? '35px' : '0'};
 				}
 				& .boxTop {
 					position: relative;
@@ -47,7 +47,7 @@ export default ({ children, noBackground, noBorder, color, height, width, rounde
 					height: 100%;
 					padding: 24px 34px 22px 34px;
 					border: 2px ${noBorder ? 'none' : 'solid'} ${colors.primary};
-					border-radius: ${rounded ? '35px' : '0'}
+					border-radius: ${rounded ? '35px' : '0'};
 				}
 			`}
 		>
