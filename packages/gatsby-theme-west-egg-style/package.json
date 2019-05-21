@@ -1,10 +1,15 @@
 {
   "name": "gatsby-theme-west-egg-style",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A base styles theme",
   "main": "./src/index.js",
   "types": "./src/@types/gatsby-theme-west-egg-style/index.d.ts",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/molebox/gastby-theme-west-egg.git",
+    "directory": "packages/gatsby-theme-west-egg-style"
+  },
   "keywords": [
     "gatsby",
     "gatsby-theme",
