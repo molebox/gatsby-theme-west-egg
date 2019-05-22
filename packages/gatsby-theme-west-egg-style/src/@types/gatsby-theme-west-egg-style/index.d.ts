@@ -32,19 +32,19 @@ declare module 'gatsby-theme-west-egg-style' {
 	 */
 	export const colors: Colors;
 
-	interface TitleProps {
+	interface TextProps {
 		fontSize?: string;
 		fontWeight?: string;
 		children: React.ReactNode;
 	}
 
 	/**
-	 * A configurable title
+	 * A configurable text
 	 * @param fontSize Optional font size - defaults to 3rem
 	 * @param fontWeight Optional font weight (300,400,400i,700) - defaults to 300
-	 * @param children The contents of the title
+	 * @param children The contents of the text
 	 */
-	export const Title: (props: TitleProps) => JSX.Element;
+	export const Text: (props: TextProps) => JSX.Element;
 
 	type Type = 'submit' | 'reset';
 	interface ButtonProps {

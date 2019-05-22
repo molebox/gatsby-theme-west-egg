@@ -1,1 +1,0 @@
-{"errors":[{"message":"Cannot query field \"STRIPE_API_KEY\" on type \"SiteSiteMetadata\".","locations":[{"line":4,"column":7}]}]}

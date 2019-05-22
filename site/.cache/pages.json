@@ -15,8 +15,18 @@
         "path": "/checkout/success/"
     },
     {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-mdx-blog-src-pages-default-page-mdx",
+        "jsonName": "default-page-2f1",
+        "path": "/defaultPage/"
+    },
+    {
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-mdx-blog-src-templates-blog-posts-tsx",
+        "jsonName": "test-453",
+        "path": "/test"
     }
 ]

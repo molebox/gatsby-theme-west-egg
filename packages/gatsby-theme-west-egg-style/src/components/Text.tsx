@@ -2,19 +2,19 @@ import * as React from 'react';
 import colors from '../utils/colors';
 import { css } from '@emotion/core';
 
-interface TitleProps {
+interface TextProps {
 	fontSize?: string;
 	fontWeight?: string;
 	children: React.ReactNode;
 }
 
 /**
- * A configurable title
+ * A configurable text
  * @param fontSize Optional font size - defaults to 3rem
  * @param fontWeight Optional font weight (300,400,400i,700) - defaults to 300
- * @param children The contents of the title
+ * @param children The contents of the text
  */
-export default ({ fontSize, fontWeight, children }: TitleProps) => (
+export default ({ fontSize, fontWeight, children }: TextProps) => (
 	<div
 		css={css`
 			font-family: Montserrat;
