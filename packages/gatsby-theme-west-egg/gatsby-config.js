@@ -43,6 +43,13 @@ module.exports = (options) => {
           },
         },
         {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            name: 'blog',
+            path: `blog`
+          }
+        },
+        {
           resolve: 'gatsby-plugin-google-fonts',
           options: {
             fonts: [

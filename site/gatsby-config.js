@@ -20,7 +20,8 @@ module.exports = {
               twitter: '@studio_hungry',
               siteUrl: 'http://localhost:8000'
             }
-          }
+          },
+          'gatsby-theme-west-egg-style'
         ],
         plugins: [
             {

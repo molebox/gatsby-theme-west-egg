@@ -39,6 +39,7 @@
     "gatsby-plugin-page-creator": "^2.0.12",
     "gatsby-plugin-typescript": "^2.0.13",
     "gatsby-theme-west-egg": "*",
+    "gatsby-theme-west-egg-style": "*",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
