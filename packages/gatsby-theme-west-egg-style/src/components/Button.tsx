@@ -142,7 +142,8 @@ interface ButtonProps {
 export default ({ text, onClick, type, disabled }: ButtonProps) => (
 	<div
 		css={{
-			display: 'flex',
+			// display: 'flex',
+			height: '5rem',
 			margin: '1.5rem',
 		}}
 	>

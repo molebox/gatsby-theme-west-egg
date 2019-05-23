@@ -9,6 +9,28 @@
     "gatsby-theme",
     "react"
   ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "lint": "./node_modules/.bin/eslint \"src/**/*.{ts,tsx,js}\"",
+    "eslint-check-rules": "./node_modules/.bin/eslint --print-config . | eslint-config-prettier-check",
+    "pretty-check": "prettier --check \"src/**/*.{ts,tsx,js}\"",
+    "pretty": "prettier --write \"src/**/*.{ts,tsx,js}\"",
+    "sitemap": "gatsby build && gatsby serve"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint && yarn pretty",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "yarn pretty-check",
+      "git add"
+    ]
+  },
   "dependencies": {
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-google-fonts": "^0.0.4",
@@ -35,6 +57,8 @@
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
     "gatsby": "^2.4.2",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
     "prettier": "^1.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

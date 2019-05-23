@@ -5,6 +5,10 @@ const header = css`
     grid-area: header;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    grid-template-areas: 
+    "title title buttons";
+    width: 100%;
+    margin: 1rem;
 `;
 
 interface HeaderProps {

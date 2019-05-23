@@ -36,6 +36,7 @@ declare module 'gatsby-theme-west-egg-style' {
 		fontSize?: string;
 		fontWeight?: string;
 		children: React.ReactNode;
+		color?: string;
 	}
 
 	/**
@@ -43,6 +44,7 @@ declare module 'gatsby-theme-west-egg-style' {
 	 * @param fontSize Optional font size - defaults to 3rem
 	 * @param fontWeight Optional font weight (300,400,400i,700) - defaults to 300
 	 * @param children The contents of the text
+	 * @param color Optional color for the text
 	 */
 	export const Text: (props: TextProps) => JSX.Element;
 
@@ -79,11 +81,27 @@ declare module 'gatsby-theme-west-egg-style' {
 
 	interface ContainerProps {
 		children: React.ReactNode[];
+		customGrid?: string;
 	}
-
+	
 	/**
 	 * A container component that sets a grid layout
-	 */
+	 * @param children The children elements for the grid
+	 * @param customGrid Optional custom grid layout
+	 * @example default grid layout: 
+		display: grid;
+		grid-template-columns: .2fr 2fr .2fr;
+		grid-template-rows: .5fr 1fr .5fr;
+
+		grid-template-areas:
+		". header ."
+		". hero ."
+		". content ."
+		". footer .";
+
+		height: 100vh;
+		grid-gap: 2rem;
+	*/
 	export const Container: (props: ContainerProps) => JSX.Element;
 
 	interface HeaderProps {

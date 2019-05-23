@@ -1,44 +1,59 @@
 import React from 'react';
-import {Box, Text, Button, Grid, Container, Header, Hero, Content, Footer} from 'gatsby-theme-west-egg-style';
+import { Box, Text, Button, Grid, Container, Header, Hero, Content, Footer } from 'gatsby-theme-west-egg-style';
+import { SEO } from 'gatsby-theme-west-egg-core';
+import { StripeCheckout } from 'gatsby-theme-west-egg-stripe-cart';
+import { Link } from 'gatsby';
+
+import { useSiteMetadata } from 'gatsby-theme-west-egg-core/src/utils/Utilities';
 import colors from 'gatsby-theme-west-egg-style/src/utils/colors';
 
 const boxes = [
-    <Box noBackground>
-        <Text fontWeight="400">Box 1</Text>
-    </Box>,
-     <Box color={colors.light}>
-        <Text fontWeight="400">Box 2</Text>
-    </Box>,
-    <Button text="I am a rad button"/>,
-    <Box noBackground>
-        <Text fontWeight="400">Box 4</Text>
-    </Box>,
-    <Button text="I am a rad button"/>,
-     <Box color={colors.accent}>
-        <Text fontWeight="400">Box 6</Text>
-    </Box>,
-]
+	<Box color={colors.primary}>
+		<Text color="white">Im just a box waiting for content</Text>
+	</Box>,
+	<Box noBorder noBackground>
+		<StripeCheckout
+			button={<Button text="Buy Using Stripe Checkout" type="submit" />}
+			sku="sku_F2wt2pvjhQrs0w"
+			quantity={1}
+		/>
+	</Box>,
+];
 
-export default () => (
-    <Container>
-        <Header>
-            <Text>Gatbsy West Egg Theme</Text>
-        </Header>
-        <Hero>
-            <Box color={colors.accent}>
-                <Text fontSize="2rem">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Beatae at eius asperiores voluptatibus est, animi nemo odio recusandae ut cumque, iure, repellendus nam dolorem dignissimos dolore. Quia recusandae non molestias.
-                </Text>
-            </Box>
-        </Hero>
-        <Content>
-            <Box noBackground>
-                <Grid elements={boxes}/>
-            </Box>
-        </Content>
-        <Footer>
-            <Text fontSize="2rem">Some content here in the footer</Text>
-        </Footer>
-    </Container>
-)
+export default () => {
+	const { title, description, author, twitter } = useSiteMetadata();
+
+	return (
+		<Container>
+			<SEO />
+			<Header>
+				<Text>{title}</Text>
+				<div
+					style={{
+						display: 'flex',
+						flexDirection: 'row',
+						justifyContent: 'center',
+					}}
+				>
+					<Link to="/test/">
+						<Button text="blog" />
+					</Link>
+					<Button text="contact" />
+				</div>
+			</Header>
+			<Hero>
+				<Box color={colors.accent}>
+					<Text fontSize="2rem">{description}</Text>
+				</Box>
+			</Hero>
+			<Content>
+				<Grid elements={boxes} />
+			</Content>
+			<Footer>
+				<Box>
+					<Text fontSize="2rem">{twitter}</Text>
+				</Box>
+			</Footer>
+		</Container>
+	);
+};

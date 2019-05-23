@@ -6,6 +6,7 @@ interface TextProps {
 	fontSize?: string;
 	fontWeight?: string;
 	children: React.ReactNode;
+	color?: string;
 }
 
 /**
@@ -13,8 +14,9 @@ interface TextProps {
  * @param fontSize Optional font size - defaults to 3rem
  * @param fontWeight Optional font weight (300,400,400i,700) - defaults to 300
  * @param children The contents of the text
+ * @param color Optional color for the text
  */
-export default ({ fontSize, fontWeight, children }: TextProps) => (
+export default ({ fontSize, fontWeight, children, color }: TextProps) => (
 	<div
 		css={css`
 			font-family: Montserrat;
@@ -29,6 +31,7 @@ export default ({ fontSize, fontWeight, children }: TextProps) => (
 			align-items: center;
 			justify-content: center;
 			word-wrap: break-word;
+			color: ${color ? color : undefined}
 		`}
 	>
 		{children}

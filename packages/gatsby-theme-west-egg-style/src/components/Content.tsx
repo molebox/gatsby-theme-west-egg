@@ -3,6 +3,7 @@ import { css } from '@emotion/core';
 
 const content = css`
     grid-area: content;
+    margin: 1rem;
 `;
 
 interface ContentProps {

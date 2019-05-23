@@ -2,6 +2,9 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { useSiteMetadata } from '../utils/Utilities';
 
+/**
+ * An SEO component which places typical site information in the sites head
+ */
 export default () => {
 	const { title, description, twitter } = useSiteMetadata();
 

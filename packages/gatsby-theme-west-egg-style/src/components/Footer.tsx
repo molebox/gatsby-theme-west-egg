@@ -3,6 +3,7 @@ import { css } from '@emotion/core';
 
 const footer = css`
     grid-area: footer;
+    margin: 1rem;
 `;
 
 interface FooterProps {

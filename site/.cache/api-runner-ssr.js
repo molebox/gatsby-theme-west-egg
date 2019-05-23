@@ -1,17 +1,17 @@
 var plugins = [{
-      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-mdx/gatsby-ssr'),
-      options: {"plugins":[],"defaultLayouts":{"default":"D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\packages\\gatsby-theme-west-egg-mdx-blog\\src\\templates\\blogPosts.tsx"}},
+      plugin: require('D:/HUNGRYBEARSTUDIO/GATSBY-THEMES/gastby-theme-west-egg/node_modules/gatsby-mdx/gatsby-ssr'),
+      options: {"plugins":[],"defaultLayouts":{"default":"D:\\HUNGRYBEARSTUDIO\\GATSBY-THEMES\\gastby-theme-west-egg\\packages\\gatsby-theme-west-egg-mdx-blog\\src\\templates\\blogPosts.tsx"}},
     },{
-      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('D:/HUNGRYBEARSTUDIO/GATSBY-THEMES/gastby-theme-west-egg/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('D:/HUNGRYBEARSTUDIO/GATSBY-THEMES/gastby-theme-west-egg/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-plugin-stripe/gatsby-ssr'),
+      plugin: require('D:/HUNGRYBEARSTUDIO/GATSBY-THEMES/gastby-theme-west-egg/node_modules/gatsby-plugin-stripe/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      plugin: require('D:/HUNGRYBEARSTUDIO/GATSBY-THEMES/gastby-theme-west-egg/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["Montserrat","source sans pro:300,400,400i,700"]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
