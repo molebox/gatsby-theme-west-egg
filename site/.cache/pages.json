@@ -5,6 +5,11 @@
         "path": "/"
     },
     {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-pages-blog-posts-tsx",
+        "jsonName": "blog-posts-aba",
+        "path": "/blogPosts/"
+    },
+    {
         "componentChunkName": "component---packages-gatsby-theme-west-egg-src-pages-checkout-canceled-tsx",
         "jsonName": "checkout-canceled-6c7",
         "path": "/checkout/canceled/"
@@ -23,10 +28,5 @@
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"
-    },
-    {
-        "componentChunkName": "component---packages-gatsby-theme-west-egg-mdx-blog-src-templates-blog-posts-tsx",
-        "jsonName": "test-453",
-        "path": "/test"
     }
 ]

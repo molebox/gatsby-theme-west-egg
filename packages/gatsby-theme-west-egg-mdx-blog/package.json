@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A base mdx blog theme",
   "main": "index.js",
+  "types": "./src/@types/gatsby-theme-west-egg-mdx-blog/index.d.ts",
   "license": "MIT",
   "keywords": [
     "gatsby",
@@ -69,6 +70,7 @@
     "gatsby-plugin-page-creator": "^2.0.12",
     "gatsby-plugin-redirects": "^1.0.0",
     "gatsby-plugin-typescript": "^2.0.14",
-    "gatsby-source-filesystem": "^2.0.33"
+    "gatsby-source-filesystem": "^2.0.33",
+    "mkdirp": "^0.5.1"
   }
 }

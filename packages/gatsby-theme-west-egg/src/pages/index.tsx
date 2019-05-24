@@ -21,7 +21,7 @@ const boxes = [
 ];
 
 export default () => {
-	const { title, description, author, twitter } = useSiteMetadata();
+	const { title, description, twitter } = useSiteMetadata();
 
 	return (
 		<Container>
@@ -35,7 +35,7 @@ export default () => {
 						justifyContent: 'center',
 					}}
 				>
-					<Link to="/test/">
+					<Link to="/blogPosts/">
 						<Button text="blog" />
 					</Link>
 					<Button text="contact" />
