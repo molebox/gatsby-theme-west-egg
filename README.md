@@ -12,7 +12,7 @@ Current status: WIP
 
 ## Built With
 
-- [Gatbsy](https://www.gatsbyjs.org/)
+- [Gatsby](https://www.gatsbyjs.org/)
 - [Emotion](https://emotion.sh/docs/introduction)
 - [Stripe Checkout](https://stripe.com/en-se)
 - [TypeScript](https://www.typescriptlang.org/)
