@@ -1,12 +1,7 @@
 {
   "stages": {
     "develop": {
-      "plugins": [
-        {
-          "name": "@babel/plugin-proposal-object-rest-spread",
-          "options": {}
-        }
-      ],
+      "plugins": [],
       "presets": [
         {
           "name": "@babel/preset-typescript",
@@ -29,12 +24,7 @@
       }
     },
     "develop-html": {
-      "plugins": [
-        {
-          "name": "@babel/plugin-proposal-object-rest-spread",
-          "options": {}
-        }
-      ],
+      "plugins": [],
       "presets": [
         {
           "name": "@babel/preset-typescript",
@@ -57,12 +47,7 @@
       }
     },
     "build-html": {
-      "plugins": [
-        {
-          "name": "@babel/plugin-proposal-object-rest-spread",
-          "options": {}
-        }
-      ],
+      "plugins": [],
       "presets": [
         {
           "name": "@babel/preset-typescript",
@@ -85,12 +70,7 @@
       }
     },
     "build-javascript": {
-      "plugins": [
-        {
-          "name": "@babel/plugin-proposal-object-rest-spread",
-          "options": {}
-        }
-      ],
+      "plugins": [],
       "presets": [
         {
           "name": "@babel/preset-typescript",

@@ -15,7 +15,6 @@ module.exports = (options) => {
   return {
     __experimentalThemes: [
       'gatsby-theme-west-egg-style',
-      'gatsby-theme-west-egg-mdx-blog',
       {
         resolve: 'gatsby-theme-west-egg-core',
         options: {
