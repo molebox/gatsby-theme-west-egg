@@ -9,6 +9,10 @@
     "gatsby-theme",
     "react"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/molebox/gastby-theme-west-egg.git"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
