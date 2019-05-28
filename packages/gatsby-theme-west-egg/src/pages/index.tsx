@@ -26,7 +26,7 @@ export default () => {
 	return (
 		<Container>
 			<SEO />
-			<Header>
+			<Header twoColumn>
 				<Text>{title}</Text>
 				<div
 					style={{
@@ -35,7 +35,7 @@ export default () => {
 						justifyContent: 'center',
 					}}
 				>
-					<Link to="/blogIndex/">
+					<Link state={twitter} to="/blogIndex/">
 						<Button text="blog" />
 					</Link>
 					<Button text="contact" />

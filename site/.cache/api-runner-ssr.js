@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-mdx/gatsby-ssr'),
+      options: {"plugins":[],"defaultLayouts":{"default":"D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\packages\\gatsby-theme-west-egg-blog\\src\\components\\posts-page-layout.js"}},
+    },{
       plugin: require('D:/HUNGRY BEAR STUDIO/GATSBY-THEMES/gatsby-theme-west-egg-medley/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{

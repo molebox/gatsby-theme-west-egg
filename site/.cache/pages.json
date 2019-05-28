@@ -5,6 +5,41 @@
         "path": "/"
     },
     {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-components-posts-page-layout-tsx",
+        "jsonName": "blog-post-1-a99",
+        "path": "/blog/post1/"
+    },
+    {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-components-posts-page-layout-tsx",
+        "jsonName": "blog-post-2-803",
+        "path": "/blog/post2/"
+    },
+    {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-components-posts-page-layout-tsx",
+        "jsonName": "blog-post-3-8d2",
+        "path": "/blog/post3/"
+    },
+    {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-components-posts-page-layout-tsx",
+        "jsonName": "blog-post-4-0fa",
+        "path": "/blog/post4/"
+    },
+    {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-components-posts-page-layout-tsx",
+        "jsonName": "blog-post-5-ebc",
+        "path": "/blog/post5/"
+    },
+    {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-components-posts-page-layout-tsx",
+        "jsonName": "blog-post-6-6dc",
+        "path": "/blog/post6/"
+    },
+    {
+        "componentChunkName": "component---packages-gatsby-theme-west-egg-src-pages-blog-index-tsx",
+        "jsonName": "blog-index-201",
+        "path": "/blogIndex/"
+    },
+    {
         "componentChunkName": "component---packages-gatsby-theme-west-egg-src-pages-checkout-canceled-tsx",
         "jsonName": "checkout-canceled-6c7",
         "path": "/checkout/canceled/"

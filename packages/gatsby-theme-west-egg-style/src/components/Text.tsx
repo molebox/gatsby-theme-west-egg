@@ -26,12 +26,11 @@ export default ({ fontSize, fontWeight, children, color }: TextProps) => (
 			letter-spacing: 2px;
 			margin: 0 0 12px 0;
 			padding: 0;
-			color: ${colors.primary};
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			word-wrap: break-word;
-			color: ${color ? color : undefined}
+			color: ${color ? color : colors.primary}
 		`}
 	>
 		{children}
