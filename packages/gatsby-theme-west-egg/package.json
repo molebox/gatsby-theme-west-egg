@@ -37,6 +37,7 @@
     "gatsby-plugin-page-creator": "^2.0.12",
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-theme-west-egg-core": "*",
+    "gatsby-theme-west-egg-blog": "*",
     "gatsby-theme-west-egg-stripe-cart": "*",
     "gatsby-theme-west-egg-style": "0.0.14"
   },

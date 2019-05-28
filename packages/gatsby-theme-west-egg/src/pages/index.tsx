@@ -35,7 +35,7 @@ export default () => {
 						justifyContent: 'center',
 					}}
 				>
-					<Link to="/blogPosts/">
+					<Link to="/blogIndex/">
 						<Button text="blog" />
 					</Link>
 					<Button text="contact" />

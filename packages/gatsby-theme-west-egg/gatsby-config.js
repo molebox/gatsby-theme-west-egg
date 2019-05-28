@@ -15,6 +15,7 @@ module.exports = (options) => {
   return {
     __experimentalThemes: [
       'gatsby-theme-west-egg-style',
+      'gatsby-theme-west-egg-blog',
       {
         resolve: 'gatsby-theme-west-egg-core',
         options: {
@@ -35,17 +36,17 @@ module.exports = (options) => {
       }
   ],
   plugins: [
-      {
-          resolve: "gatsby-plugin-page-creator",
+        {
+          resolve: 'gatsby-plugin-page-creator',
           options: {
-            path: path.join(__dirname, "src", "pages"),
-          },
+              path: `${__dirname}/src/pages`
+          }
         },
         {
           resolve: 'gatsby-source-filesystem',
           options: {
             name: 'blog',
-            path: `blog`
+            path: 'blog'
           }
         },
         {

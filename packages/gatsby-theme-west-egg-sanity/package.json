@@ -1,0 +1,7 @@
+{
+  "name": "gatsby-theme-west-egg-sanity",
+  "version": "0.0.1",
+  "description": "A sanity theme",
+  "main": "index.js",
+  "license": "MIT"
+}

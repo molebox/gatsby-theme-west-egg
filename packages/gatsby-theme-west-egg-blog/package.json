@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-theme-west-egg-blog",
+  "version": "0.0.1",
+  "description": "A blog theme",
+  "main": "index.js",
+  "author": "Hungry Bear Studio <roar@hungrybearstudio.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "gatsby": "^2.7.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.7.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.0.0-rc.4",
+    "@mdx-js/react": "^1.0.0-rc.5",
+    "gatsby-mdx": "^0.6.3",
+    "gatsby-plugin-page-creator": "^2.0.13"
+  }
+}
