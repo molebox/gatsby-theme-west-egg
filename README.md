@@ -7,7 +7,8 @@ A Gatsby theme package built with Emotion and Typescript consisting of:
 - Stripe Cart theme - WIP
 - Sanity.io studio - WIP
 - [Master theme](https://www.npmjs.com/package/gatsby-theme-west-egg)
-- Example site
+
+View the theme in the wild: [hungrybearstudio.com](https://www.hungrybearstudio.com/)
 
 Current status: WIP
 
