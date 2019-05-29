@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-west-egg",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "WIP: A theme medley to create a Gatsby site with custom branding and styles. ",
   "main": "index.js",
   "license": "MIT",
@@ -43,7 +43,7 @@
     "gatsby-theme-west-egg-blog": "*",
     "gatsby-theme-west-egg-core": "*",
     "gatsby-theme-west-egg-stripe-cart": "*",
-    "gatsby-theme-west-egg-style": "0.0.16"
+    "gatsby-theme-west-egg-style": "0.0.20"
   },
   "devDependencies": {
     "@types/react": "^16.8.17",
