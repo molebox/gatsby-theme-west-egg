@@ -1,6 +1,6 @@
-import * as React from 'react';
+/** @jsx jsx */ 
+import { jsx, css } from '@emotion/core'
 import colors from '../utils/colors';
-import { css } from '@emotion/core';
 
 export interface BoxProps {
 	noBackground?: boolean;

@@ -12,10 +12,6 @@ exports.onPreBootstrap = ({ store, reporter }) => {
 
   const dirs = [
     path.join(program.directory, "blog/"),
-    path.join(program.directory, "src/components"),
-    path.join(program.directory, "src/pages"),
-    // path.join(program.directory, "src/data"),
-    // path.join(program.directory, "src/images")
   ];
 
   dirs.forEach(dir => {

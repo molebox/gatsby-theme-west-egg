@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { css } from '@emotion/core';
+/** @jsx jsx */ 
+import { jsx, css } from '@emotion/core';
 import colors from '../utils/colors';
 
 export const buttonBorderLeft = css`

@@ -18,7 +18,7 @@ function PageTemplate({ data: { mdx }}: any) {
 					}}
 				>
 					<Link to="/blogIndex">
-						<Button text="im done reading this.." />
+						<Button text="im done reading this.. 🤓" />
 					</Link>
 				</div>
       </Header>

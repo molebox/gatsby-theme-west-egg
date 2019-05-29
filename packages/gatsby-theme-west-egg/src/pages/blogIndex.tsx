@@ -10,8 +10,7 @@ grid-template-rows: .5fr 1fr 1fr;
 
 grid-template-areas:
 ". header ."
-". hero ."
-"footer footer footer";
+". hero .";
 
 height: 100vh;
 margin: 1rem;
@@ -23,7 +22,7 @@ const BlogIndex = ({ data, location }: any) => {
   const { edges: posts } = data.allMdx
 
   const blogs = posts.map(({ node: post }: any, index: number) => (
-    <Box height="170px" width="100%" color={isOdd(index) ? colors.primary : colors.light} key={post.id}>
+    <Box color={isOdd(index) ? colors.primary : colors.light} key={post.id}>
       <Link style={{textDecoration: 'none'}} to={post.fields.slug}>
         <Text color={isOdd(index) ? 'white' : colors.primary}>{post.frontmatter.title}</Text>
       </Link>
@@ -40,15 +39,13 @@ const BlogIndex = ({ data, location }: any) => {
         <Box color={colors.accent}>
           <Text>West Egg Blog</Text>
         </Box>
+        <Link to="/">
+					<Button text="take me 🏡" />
+				</Link>
       </Header>
       <Hero>
-        <Grid elements={blogs}/>
+      <Grid elements={blogs}/>
       </Hero>
-			<Footer>
-        <Link to="/">
-					<Button text="home" />
-				</Link>
-			</Footer>
     </Container>
   )
 }
