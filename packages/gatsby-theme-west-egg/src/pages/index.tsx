@@ -35,7 +35,7 @@ export default () => {
 						justifyContent: 'center',
 					}}
 				>
-					<Link state={twitter} to="/blogIndex/">
+					<Link to="/blogIndex/">
 						<Button text="blog" />
 					</Link>
 					<Button text="contact" />

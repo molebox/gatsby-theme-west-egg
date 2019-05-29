@@ -18,7 +18,7 @@ grid-gap: 2rem;`
 
 const isOdd = (number: number) => number % 2;
 
-const BlogIndex = ({ data, location }: any) => {
+const BlogIndex = ({ data }: any) => {
   const { edges: posts } = data.allMdx
 
   const blogs = posts.map(({ node: post }: any, index: number) => (
@@ -29,7 +29,6 @@ const BlogIndex = ({ data, location }: any) => {
       <div style={{marginTop: '2rem'}}>
       <Text color={isOdd(index) ? 'white' : colors.primary} fontSize="1rem">{post.frontmatter.author} - {post.frontmatter.date}</Text>
       </div>
-      {location.state.twitter}
     </Box>
   ));
 
