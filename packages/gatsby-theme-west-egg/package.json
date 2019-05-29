@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-west-egg",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "WIP: A theme medley to create a Gatsby site with custom branding and styles. ",
   "main": "index.js",
   "license": "MIT",
