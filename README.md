@@ -3,8 +3,8 @@
 A Gatsby theme package built with Emotion and Typescript consisting of:
 
 - [Style theme](https://www.npmjs.com/package/gatsby-theme-west-egg-style)
-- Blog theme - WIP
-- Stripe Cart theme - WIP
+- Blog theme
+- Stripe Cart theme
 - Sanity.io studio - WIP
 - [Master theme](https://www.npmjs.com/package/gatsby-theme-west-egg)
 
