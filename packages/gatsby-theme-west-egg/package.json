@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-west-egg",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "WIP: A theme medley to create a Gatsby site with custom branding and styles. ",
   "main": "index.js",
   "license": "MIT",
@@ -9,6 +9,10 @@
     "gatsby-theme",
     "react"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/molebox/gastby-theme-west-egg.git"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -36,10 +40,10 @@
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-page-creator": "^2.0.12",
     "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-theme-west-egg-blog": "*",
     "gatsby-theme-west-egg-core": "*",
-    "gatsby-theme-west-egg-mdx-blog": "*",
     "gatsby-theme-west-egg-stripe-cart": "*",
-    "gatsby-theme-west-egg-style": "0.0.14"
+    "gatsby-theme-west-egg-style": "0.0.20"
   },
   "devDependencies": {
     "@types/react": "^16.8.17",

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Core theme with base content",
   "main": "index.js",
+  "types": "./src/@types/gatsby-theme-west-egg-core/index.d.ts",
   "license": "MIT",
   "keywords": [
     "gatsby",

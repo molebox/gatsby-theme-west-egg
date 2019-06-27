@@ -3,8 +3,8 @@
 A Gatsby theme package built with Emotion and Typescript consisting of:
 
 - Style theme
-- Blog theme: WIP
-- Stripe Cart theme
+- Mdx blog theme: WIP
+- Stripe cart theme
 - Core theme
 
 ```
@@ -26,6 +26,8 @@ module.exports = {
         ],
 }
 ```
+
+Create a blog folder at the root of your site and add your mdx files there.
 
 Current status: WIP
 

@@ -106,10 +106,13 @@ declare module 'gatsby-theme-west-egg-style' {
 
 	interface HeaderProps {
 		children: React.ReactNode;
+		twoColumn?: boolean;
 	}
-
+	
 	/**
 	 * A header component. Part of the containers grid
+	 * @param children The contents of the header, can include buttons
+	 * @param twoColumn Boolean, decides if header is split into two columns or not
 	 */
 	export const Header: (props: HeaderProps) => JSX.Element;
 

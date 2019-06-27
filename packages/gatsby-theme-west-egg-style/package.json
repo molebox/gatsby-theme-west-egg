@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-west-egg-style",
-  "version": "0.0.15",
+  "version": "0.0.21",
   "description": "A base styles theme",
   "main": "./src/index.js",
   "types": "./src/@types/gatsby-theme-west-egg-style/index.d.ts",
@@ -70,7 +70,7 @@
     "@types/react": "^16.8.16",
     "@types/react-dom": "^16.8.4",
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
-    "gatsby-plugin-emotion": "^4.0.6",
+    "gatsby-plugin-emotion": "^4.0.7",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-page-creator": "^2.0.12",
     "gatsby-plugin-typescript": "^2.0.13",

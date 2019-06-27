@@ -34,7 +34,8 @@ module.exports = (options) => {
                 }
               },
               'gatsby-plugin-emotion',
-              'gatsby-plugin-typescript'
+              'gatsby-plugin-typescript',
+              'gatsby-plugin-emotion'
         ]
     }
 }

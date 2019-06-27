@@ -9,13 +9,13 @@
       ],
       "presets": [
         {
-          "name": "@babel/preset-typescript",
+          "name": "D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
           "options": {
             "plugins": []
           }
         },
         {
-          "name": "@emotion/babel-preset-css-prop",
+          "name": "D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
           "options": {
             "sourceMap": true,
             "autoLabel": true,
@@ -37,13 +37,13 @@
       ],
       "presets": [
         {
-          "name": "@babel/preset-typescript",
+          "name": "D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
           "options": {
             "plugins": []
           }
         },
         {
-          "name": "@emotion/babel-preset-css-prop",
+          "name": "D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
           "options": {
             "sourceMap": true,
             "autoLabel": true,
@@ -65,13 +65,13 @@
       ],
       "presets": [
         {
-          "name": "@babel/preset-typescript",
+          "name": "D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
           "options": {
             "plugins": []
           }
         },
         {
-          "name": "@emotion/babel-preset-css-prop",
+          "name": "D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
           "options": {
             "sourceMap": true,
             "autoLabel": true,
@@ -93,13 +93,13 @@
       ],
       "presets": [
         {
-          "name": "@babel/preset-typescript",
+          "name": "D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
           "options": {
             "plugins": []
           }
         },
         {
-          "name": "@emotion/babel-preset-css-prop",
+          "name": "D:\\HUNGRY BEAR STUDIO\\GATSBY-THEMES\\gatsby-theme-west-egg-medley\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
           "options": {
             "sourceMap": true,
             "autoLabel": true,
