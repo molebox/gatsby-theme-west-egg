@@ -18,6 +18,42 @@ const boxes = [
 			quantity={1}
 		/>
 	</Box>,
+	<Box rounded noBackground>
+		<Text>Im just a box waiting for content... Look at my radius! 😜</Text>
+	</Box>,
+	<Box noBorder noBackground>
+		<StripeCheckout
+			button={<Button text="Buy Using Stripe Checkout" type="submit" />}
+			sku="sku_F2wt2pvjhQrs0w"
+			quantity={1}
+		/>
+	</Box>,
+	<Box rounded noBackground>
+	<Text>Im just a box waiting for content... Look at my radius! 😜</Text>
+</Box>,
+	<Box rounded noBackground>
+	<Text>Im just a box waiting for content... Look at my radius! 😜</Text>
+</Box>,
+	<Box rounded noBackground>
+	<Text>Im just a box waiting for content... Look at my radius! 😜</Text>
+</Box>,
+<Box noBorder noBackground>
+	<StripeCheckout
+		button={<Button text="Buy Using Stripe Checkout" type="submit" />}
+		sku="sku_F2wt2pvjhQrs0w"
+		quantity={1}
+	/>
+</Box>,
+<Box rounded noBackground>
+		<Text>Im just a box waiting for content... Look at my radius! 😜</Text>
+	</Box>,
+	<Box noBorder noBackground>
+		<StripeCheckout
+			button={<Button text="Buy Using Stripe Checkout" type="submit" />}
+			sku="sku_F2wt2pvjhQrs0w"
+			quantity={1}
+		/>
+	</Box>,
 ];
 
 export default () => {
