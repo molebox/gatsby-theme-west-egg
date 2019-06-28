@@ -17,6 +17,7 @@ declare module 'gatsby-theme-west-egg-style' {
 	 * @param height Optional box height
 	 * @param width Optional box width
 	 * @param children The contents of the box
+	 * @param rounded Give the box rounded corners
 	 */
 	export const Box: (props: BoxProps) => JSX.Element;
 
@@ -54,6 +55,7 @@ declare module 'gatsby-theme-west-egg-style' {
 		onClick?: () => void;
 		type?: Type;
 		disabled?: boolean;
+		rounded?: boolean;
 	}
 
 	/**
@@ -65,6 +67,7 @@ declare module 'gatsby-theme-west-egg-style' {
 	 * @param onClick The onClick event of the button
 	 * @param type The type of the button. submit or reset
 	 * @param disabled Is the button disabled
+	 * @param rounded Give the button rounded corners
 	 */
 	export const Button: (props: ButtonProps) => JSX.Element;
 

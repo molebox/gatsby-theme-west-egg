@@ -20,6 +20,7 @@ export interface BoxProps {
  * @param height Optional box height
  * @param width Optional box width
  * @param children The contents of the box
+ * @param rounded Give the box rounded corners
  */
 export default ({ children, noBackground, noBorder, color, height, width, rounded }: BoxProps) => {
 	return (

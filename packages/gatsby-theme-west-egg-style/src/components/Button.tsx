@@ -139,6 +139,7 @@ interface ButtonProps {
  * @param onClick The onClick event of the button - optional
  * @param type The type of the button. submit or reset - optional
  * @param disabled Is the button disabled
+ * @param rounded Give the button rounded corners
  */
 export default ({ text, onClick, type, disabled, rounded }: ButtonProps) => (
 	<div
