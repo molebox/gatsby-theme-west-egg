@@ -127,6 +127,7 @@ interface ButtonProps {
 	onClick?: () => void;
 	type?: Type;
 	disabled?: boolean;
+	rounded?: boolean;
 }
 
 /**
@@ -139,7 +140,7 @@ interface ButtonProps {
  * @param type The type of the button. submit or reset - optional
  * @param disabled Is the button disabled
  */
-export default ({ text, onClick, type, disabled }: ButtonProps) => (
+export default ({ text, onClick, type, disabled, rounded }: ButtonProps) => (
 	<div
 		css={{
 			// display: 'flex',
@@ -147,7 +148,81 @@ export default ({ text, onClick, type, disabled }: ButtonProps) => (
 			margin: '1.5rem',
 		}}
 	>
-		<button disabled={disabled} type={type} aria-label={text} name={text} onClick={onClick} css={button}>
+		<button disabled={disabled} type={type} aria-label={text} name={text} onClick={onClick} css={
+			css`
+			display: inline-block;
+			text-decoration: none;
+			position: relative;
+			background-color: Transparent;
+			border: none;
+			cursor: pointer;
+			outline: none;
+		
+			& .bottom {
+				position: absolute;
+				left: 7px;
+				top: 9px;
+				width: 99%;
+				height: 100%;
+				background-color: ${colors.secondary};
+				display: block;
+				border-radius: ${rounded ? '35px' : '0'};
+				-webkit-transition: all 0.2s ease-out;
+				-moz-transition: all 0.2s ease-out;
+				-o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+			}
+		
+			& .top {
+				position: relative;
+				left: 10px;
+				top: 0;
+				padding: 24px 34px 22px 34px;
+				border: 2px solid ${colors.primary};
+				border-radius: ${rounded ? '35px' : '0'};
+			}
+		
+			& .top .label {
+				font-family: Montserrat;
+				font-weight: 700;
+				color: ${colors.primary};
+				font-size: 1rem;
+				line-height: 110%;
+				letter-spacing: 2px;
+				text-align: center;
+				// text-transform: uppercase;
+				-webkit-transition: all 0.15s ease-out;
+				-moz-transition: all 0.15s ease-out;
+				-o-transition: all 0.15s ease-out;
+				transition: all 0.15s ease-out;
+			}
+			&:active:enabled {
+				${buttonDark}
+			}
+		
+			&:disabled {
+				opacity: 0.55;
+			}
+		
+			&:hover:enabled .bottom {
+				left: 10px;
+				top: 0;
+				background-color: ${colors.light};
+			}
+			&:hover:enabled .top .label {
+				color: ${colors.primary};
+				cursor: pointer;
+			}
+			&:hover:enabled .top .${buttonBorderLeft}, &:hover .top .${buttonBorderRight} {
+				height: calc(100% + 2px);
+				cursor: pointer;
+			}
+			&:hover:enabled .top .${buttonBorderTop}, &:hover .top .${buttonBorderBottom} {
+				width: calc(100% + 2px);
+				cursor: pointer;
+			}
+		`
+		}>
 			<div className="bottom" />
 			<div className="top">
 				<div className="label">{text}</div>
